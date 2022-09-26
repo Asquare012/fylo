@@ -1,0 +1,504 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #181f2a;
+    color: #ffffff;
+}
+
+#container {
+    background-color: #1c2431;
+}
+
+
+/* header */
+
+#container header {
+    position: fixed;
+    width: 100vw;
+}
+
+#container header ul {
+    display: flex;
+}
+
+#container header ul li:first-child {
+    margin: 30px 59% 0 80px;
+}
+
+#container header ul li {
+    list-style: none;
+    margin: 30px 2% 0 1%;
+}
+
+#container header ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* major background */
+
+#container #major-ground {
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30%;
+    background: url(bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+#container #major-ground .second {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    padding: 10px 0;
+    font-size: 3vw;
+}
+
+#container #major-ground .third {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    padding: 0 7% 15px 7%;
+    font-size: 1.4vw;
+}
+
+#container #major-ground .fourth button {
+    border: none;
+    outline: none;
+    padding: 12px 60px;
+    border-radius: 20px;
+    background: #65e2d9;
+    background: linear-gradient(to left, #339ecc, #65e2d9);
+    cursor: pointer;
+}
+
+#container #major-ground .fourth a button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+
+/* features */
+
+#container #features {
+    height: 90vh;
+    background-color: #181f2a;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding: 0 16%;
+}
+
+#container #features div {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 20px;
+}
+
+#container #features div:nth-child(even) {
+    padding: 0 4%;
+}
+
+#container #features div h3 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+
+/* productive */
+
+#container #productive {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181f2a;
+}
+
+#container #productive div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+#container #productive .first {
+    flex: 50%;
+    height: 100%;
+}
+
+#container #productive .second {
+    flex: 50%;
+    height: 50%;
+    align-items: flex-start;
+    padding-right: 100px;
+    font-weight: bold;
+}
+
+#container #productive .second div:first-child {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#container #productive .second div:last-child {
+    flex-direction: row;
+    text-decoration: underline;
+}
+
+#container #productive .second div:last-child img {
+    padding-left: 5px;
+}
+
+#container #productive .second div:last-child a {
+    color: #62e0d9;
+}
+
+
+/* team */
+
+#container #team {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-color: #181f2a;
+    font-size: 15px;
+    padding: 0 3%;
+}
+
+#container #team div {
+    height: 200px;
+    width: 360px;
+    margin: 10px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1c2431;
+    box-shadow: 10px 10px 1px #1a212c;
+    padding: 0 2%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    word-spacing: 2px;
+    margin-top: -50px;
+}
+
+#container #team div img {
+    border-radius: 50%;
+}
+
+
+/* newsletter */
+
+#container #newsletter {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181f2a;
+    margin-bottom: -250px;
+}
+
+#container #newsletter #box {
+    height: 250px;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 7%;
+    background-color: #1c2431;
+    box-shadow: 5px 5px 2px #0d1725;
+}
+
+#container #newsletter #box h2 {
+    font-size: 40px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    padding-bottom: 15px;
+}
+
+#container #newsletter #box h4 {
+    font-size: 15px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    padding-bottom: 15px;
+}
+
+#container #newsletter #box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container #newsletter #box form input[type] {
+    border: none;
+    outline: none;
+}
+
+#container #newsletter #box form input[type="email"] {
+    padding: 15px 50%;
+    border-radius: 50px;
+}
+
+#container #newsletter #box form input[type="submit"] {
+    padding: 10px 20%;
+    border-radius: 50px;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #5999b4;
+}
+
+#container footer {
+    height: 60vh;
+    background-color: #0b1523;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#container footer>div {
+    width: 100%;
+}
+
+#container footer>div:first-child {
+    flex: 20%;
+    display: flex;
+    align-items: center;
+    padding-left: 11%;
+}
+
+#container footer>div:last-child {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+#container footer>div:last-child>div {
+    height: 150px;
+    width: 350px;
+    margin: 10px;
+    line-height: 30px;
+}
+
+#container footer>div:nth-child(2) #content {
+    line-height: 20px;
+}
+
+#container footer>div:nth-child(2) #contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container footer>div:nth-child(2) #contact img {
+    padding-right: 10px;
+}
+
+#container footer>div:nth-child(2) ol li {
+    list-style: none;
+    cursor: pointer;
+}
+
+#container footer>div:last-child div:nth-child(3) {
+    display: flex;
+}
+
+#container footer>div:last-child div:nth-child(3) #left {
+    padding-right: 30%;
+}
+
+
+/* media queries(tablet) */
+
+@media screen and (max-width: 985px) {
+    #container header ul li:first-child {
+        margin: 30px 50% 0 60px;
+    }
+    #container #major-ground {
+        height: 125vh;
+        padding: 0 15px;
+    }
+    #container #major-ground .second {
+        font-size: 4vw;
+    }
+    #container #major-ground .third {
+        font-size: 2vw;
+    }
+    #container #features {
+        padding: 0 8%;
+    }
+    #container #productive {
+        height: 90vh;
+        flex-direction: column;
+    }
+    #container #productive .second {
+        padding-right: 0;
+    }
+    #container #productive .second div:first-child {
+        font-size: 30px;
+    }
+    #container #productive .second .first {
+        width: 100%;
+        padding: 0 5%;
+    }
+    #container #productive .second .second {
+        font-size: 15px;
+        padding: 0 5%;
+    }
+    #container #productive .second div:first-child {
+        font-size: 4vw;
+        margin-top: 12px;
+    }
+    #container #productive .third {
+        padding-left: 5%;
+    }
+    #container #team {
+        padding-top: 150px;
+        height: 100vh;
+        flex-direction: column;
+    }
+    #container #team div {
+        margin: 20px 0;
+        width: 80%;
+    }
+    #container #newsletter #box {
+        height: 250px;
+        width: 90%;
+    }
+}
+
+
+/* media queries(mobile) */
+
+@media screen and (max-width: 680px) {
+    #container header ul li:first-child {
+        margin: 30px 40% 0 30px;
+    }
+    #container #major-ground {
+        height: 80vh;
+        padding: 0 10%;
+    }
+    #container #major-ground .first img {
+        height: auto;
+        width: 90%;
+        padding-top: 200px;
+    }
+    #container #major-ground .second {
+        font-size: 5vw;
+    }
+    #container #major-ground .third {
+        font-size: 3vw;
+    }
+    #container #features {
+        height: 180vh;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 100px 16% 0 16%;
+    }
+    #container #productive {
+        padding-top: 200px;
+    }
+    #container #productive .second {
+        padding: 0 5%;
+        margin: 5px 0;
+    }
+    #container #productive .second .first img {
+        height: auto;
+        width: 100%;
+    }
+    #container #productive .second div:first-child {
+        font-size: 5vw;
+        margin-top: 30px;
+    }
+    #container #team {
+        height: 130vh;
+    }
+    #container #team>div {
+        margin: 20px 0;
+        padding: 10px 2%;
+    }
+    #container footer {
+        height: 100vh;
+    }
+    #container footer>div {
+        width: 80%;
+    }
+    #container footer>div:first-child {
+        flex: 10%;
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+    }
+    #container footer>div:last-child {
+        flex: 20%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 10%;
+    }
+    #container footer>div:last-child>div {
+        height: 80px;
+        width: 350px;
+        margin: 10px;
+        line-height: 40px;
+    }
+    #container footer>div:nth-child(2) #content {
+        line-height: 20px;
+    }
+    #container footer>div:nth-child(2) #contact {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #container footer>div:nth-child(2) #contact img {
+        padding-right: 10px;
+    }
+    #container footer>div:nth-child(2) ol li {
+        list-style: none;
+        cursor: pointer;
+    }
+    #container footer>div:last-child div:nth-child(3) {
+        display: flex;
+        height: 200px;
+    }
+    #container footer>div:last-child div:nth-child(3) #left {
+        padding-right: 30%;
+    }
+}
+
+
+/* media queries(small mobile) */
+
+@media screen and (max-width: 630px) {
+    #container header ul li:first-child {
+        margin: 30px 35% 0 30px;
+    }
+    @media screen and (max-width: 500px) {
+        #container header ul li:first-child {
+            margin: 30px 25% 0 30px;
+        }
+    }
+}
